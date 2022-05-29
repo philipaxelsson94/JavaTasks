@@ -7,7 +7,6 @@ public class Queue {
     private String[] queue;
     private int noOfElements = 0;
     // Capacity = queue.length, no need for an extra member.
-
     // Constructors
     public Queue(int size) {
         // Create the String-array with indicated capacity.
