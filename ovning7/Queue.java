@@ -3,7 +3,6 @@ package ovning7;
 import java.util.Arrays;
 
 public class Queue {
-
     // Members
     private String[] queue;
     private int noOfElements = 0;
