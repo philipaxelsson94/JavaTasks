@@ -12,17 +12,14 @@ public class Queue {
         // Create the String-array with indicated capacity.
         this.queue = new String[size];
     }
-
     // Access methods
     public int getNoOfElements() {
         return noOfElements;
     }
-
     public boolean isEmpty() {
         // Check, and return, whether the queue is empty or not.
         return noOfElements == 0;
     }
-
     // Mutator. Adds a string to the end of the queue.
     public void enqueue(String s) {
         // First, check if the array is full. If so call resize().
