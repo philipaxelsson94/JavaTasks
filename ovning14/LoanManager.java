@@ -1,6 +1,5 @@
 package ovning14;
 
-import ovning11.Bid;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
