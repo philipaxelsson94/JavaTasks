@@ -1,6 +1,6 @@
 package ovning4;
 
-public class ICard {
+public class ICard implements Comparable<ICard>{
     private Rank rank;
     private Suit suit;
 
@@ -25,5 +25,23 @@ public class ICard {
     }
     public int compare(ICard other){
         return this.rank.getRank() - other.rank.getRank();
+    }
+
+    @Override
+    public int compareTo(ICard o) {
+        if (this.getSuit() == o.getSuit()) {
+            if (this.getRank() == o.getRank()){
+                return 0;
+            }
+            else if (this.getRank() > o.getRank()){
+                return 1;
+            }
+            else
+                return -1;
+        } else if (this.getSuit() > o.getSuit()) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 }
